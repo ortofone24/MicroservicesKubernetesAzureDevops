@@ -1,0 +1,13 @@
+.vs
+.angular
+bin
+obj
+*.db
+*.suo
+wwwroot
+*appsettings.json
+.vscode
+PublishProfiles
+*FTPProfile.pubxml
+*FTPProfile.pubxml.user
+*Onwelo.Api.csproj.user
