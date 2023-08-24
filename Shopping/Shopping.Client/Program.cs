@@ -9,6 +9,16 @@ namespace Shopping.Client
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 
+            builder.Services.AddHttpClient("test", client =>
+            {
+                client.BaseAddress = new Uri("http://localhost:5000");
+            });
+
+            builder.Services.AddHttpClient("diupa", client =>
+            {
+                client.BaseAddress = new Uri("http://localhost:5000");
+            });
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -28,5 +38,7 @@ namespace Shopping.Client
 
             app.Run();
         }
+
+        
     }
 }

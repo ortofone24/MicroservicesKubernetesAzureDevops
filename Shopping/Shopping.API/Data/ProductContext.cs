@@ -1,9 +1,10 @@
-﻿using Shopping.Client.Models;
+﻿using Shopping.API.Models;
 
-namespace Shopping.Client.Data
+namespace Shopping.API.Data
 {
     public static class ProductContext
     {
+
         public static readonly List<Product> Products = new List<Product>
         {
             new Product()
