@@ -11,12 +11,14 @@ namespace Shopping.Client
 
             builder.Services.AddHttpClient("test", client =>
             {
-                client.BaseAddress = new Uri("http://localhost:5000");
+                //client.BaseAddress = new Uri("http://localhost:5000");
+                client.BaseAddress = new Uri(builder.Configuration["ShoppingAPIUrl"]);
             });
 
             builder.Services.AddHttpClient("diupa", client =>
             {
-                client.BaseAddress = new Uri("http://localhost:5000");
+                //client.BaseAddress = new Uri("http://localhost:5000");
+                client.BaseAddress = new Uri(builder.Configuration["ShoppingAPIUrl"]);
             });
 
             var app = builder.Build();
