@@ -12,6 +12,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C0764C29-76CE-41DF-8975-65408AE1E0AE}"
 	ProjectSection(SolutionItems) = preProject
 		nginx-depl.yml = nginx-depl.yml
+		nginx-serivce.yml = nginx-serivce.yml
 	EndProjectSection
 EndProject
 Global
